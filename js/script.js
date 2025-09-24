@@ -70,7 +70,8 @@ document.addEventListener("DOMContentLoaded", () => {
               currentModalId = iframe.closest('.modal').id;
               nowPlayingText.textContent = `Playing: ${iframe.title || "YouTube video"}`;
               nowPlaying.style.display = "block";
-            } else if (e.data === YT.PlayerState.PAUSED || e.data === YT.PlayerState.ENDED) {
+            } else {
+              // Cualquier estado que no sea PLAYING oculta el banner
               nowPlaying.style.display = "none";
               currentModalId = null;
             }
@@ -79,6 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
+
   window.onYouTubeIframeAPIReady = onYouTubeIframeAPIReady;
 
   if (document.querySelector('#video-container iframe')) {
@@ -98,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
       widget.bind(SC.Widget.Events.PLAY, () => {
         widget.getCurrentSound(sound => {
           currentModalId = iframe.closest('.modal').id;
-          nowPlayingText.textContent = `Playing ${sound ? sound.title : "SoundCloud track"}`;
+          nowPlayingText.textContent = `Playing: ${sound ? sound.title : "SoundCloud track"}`;
           nowPlaying.style.display = "block";
         });
       });
@@ -186,3 +188,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
   setLang(savedLang);
 });
+
