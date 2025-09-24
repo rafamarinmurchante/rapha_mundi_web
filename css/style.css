@@ -1,0 +1,210 @@
+/* ===== GENERAL ===== */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", monospace;
+  overflow-x: hidden;
+}
+
+.bg-slide {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 1s ease-in-out;
+  z-index: -2;
+  opacity: 0;
+}
+.bg-slide.show { opacity: 1; }
+
+/* ===== MENU ===== */
+.menu {
+  position: fixed;
+  top: 0;
+  width: auto;
+  z-index: 1000;
+  left: 50%;                /* mover el origen al centro */
+  transform: translateX(-50%); /* centrar la barra */
+  justify-content: center;  
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 0;
+}
+.menu li {
+  margin: 0 10px;
+  background: black;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* ===== MODAL ===== */
+:root{
+  --color-fondo-modal: white;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+.modal.show { display: block; }
+
+.modal-content {
+  background-color: var(--color-fondo-modal); 
+  color: #000;            /* texto negro */
+  margin: 5% auto;
+  padding: 20px;
+  max-width: 900px;
+  position: relative;
+}
+
+.modal .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;   /* siempre a la derecha */
+  color: #000;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal .close:hover {
+  color: #555; /* efecto hover */
+}
+
+.modal-title {
+  margin-top: 0px;
+}
+
+/* ===== NOW PLAYING ===== */
+.now-playing {
+  position: fixed;
+  bottom: 0;
+  width: auto;
+  color: #fff;
+  font-weight: bold;
+  display: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+  left: 50%;                
+  transform: translateX(-50%);
+  justify-content: center;  
+}
+.now-playing .marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: black;
+  padding-left: 5px;
+  padding-right: 5px;
+    font-size: 20px;
+}
+.now-playing #nowPlayingText {
+  display: inline-block;
+}
+
+/* ===== CANVAS ===== */
+#draw {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ===== VIDEO CONTAINER ===== */
+.video-container {
+  margin-bottom: 20px;
+}
+
+/* Contenedor de video */
+.modal .video-container {
+  width: 100%;            /* ancho igual al modal */
+  aspect-ratio: 16 / 9;   /* mantiene proporción 16:9 */
+  margin-bottom: 1rem;
+}
+
+/* Iframe ocupa todo el contenedor */
+.modal .video-container iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* ===== MIXES CONTAINER ===== */
+#mixes-container iframe {
+  margin-bottom: 10px;
+}
+
+  .lang-selector { display:flex; gap:0.25rem; margin-left:auto; }
+  .lang-btn {
+    border:2px solid #ccc; background:transparent; padding:0.25rem 0.5rem; border-radius:4px;
+    cursor:pointer;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+
+  }
+  .lang-btn[aria-pressed="true"] {
+  color: black;             /* texto azul */
+  border-color: black;      /* borde a juego */
+  
+}
+
+
+.basic-text{
+  font-size: 22px;
+  color: black;
+}
+
+.buy-btn {
+  border:2px solid #ccc; background:transparent; padding:0.25rem 0.5rem; border-radius:4px;
+  cursor:pointer;
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+
+}
+  .buy-btn:hover {
+  color: black;             /* texto azul */
+  border-color: black;      /* borde a juego */
+  
+}
+
+.release-container {
+  border: solid 1px black;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.release-container h3 {
+  margin-top: 0;
+}
+
+.social-btn {
+  border:2px solid #ccc; background:transparent; padding:0.25rem 0.5rem; border-radius:4px;
+  cursor:pointer;
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+  font-size: 20px;
+
+}
+  .social-btn:hover {
+  color: black;             /* texto azul */
+  border-color: black;      /* borde a juego */
+  
+}

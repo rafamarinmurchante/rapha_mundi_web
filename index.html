@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rapha Mundi</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="bg1" class="bg-slide"></div>
+  <div id="bg2" class="bg-slide"></div>
+  <!-- Barra de navegación -->
+  <nav class="menu">
+    <ul>
+      <li><a href="#" data-modal="bio">Bio</a></li>
+      <li><a href="#" data-modal="releases">Releases</a></li>
+      <li><a href="#" data-modal="mixes">Mixes</a></li>
+      <li><a href="#" data-modal="video">Video</a></li>
+      <li><a href="#" data-modal="social">Contact/Social</a></li>
+    </ul>
+  </nav>
+
+  <!------------------------------------------------------------------------------->
+  <!-- BIO MODAL -->
+  <!------------------------------------------------------------------------------->  
+  <div id="bio" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+      <!-- Selector de idioma -->
+
+      <h2 id="bio-title" class="modal-title">Rapha Mundi's Bio</h2>
+      <div class="lang-selector">
+        <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        <button class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
+      </div>
+      <p data-index="0" class="basic-text"></p>
+      <p data-index="1" class="basic-text"></p>
+      <p data-index="2" class="basic-text"></p>
+      <p data-index="3" class="basic-text"></p>
+    </div>
+  </div>
+
+
+  <!------------------------------------------------------------------------------->
+  <!-- RELEASES MODAL -->
+  <!------------------------------------------------------------------------------->
+  <div id="releases" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 class="modal-title">Releases</h2>
+      <div class="release-container">
+        <h3>Rapha Mundi - Bonanza [BBD004] 2025/04/03</h3> 
+        <button class="buy-btn" onclick="window.open('https://buenobuenodiscos.bandcamp.com/album/bonanza-ep-bbd004', '_blank')">Buy on Bandcamp</button>
+        <p>Rafael Marín, best known as Rapha Mundi is back on Buenobueno Discos with a solid 6 track EP titled Bonanza EP. The super prolific, hard working hero from the small town of Murchante, in Spain, keeps pushing boundaries on his personal journey through music.</p>
+        <p>On this record Rapha explores the deeper sides of House and Techno with a minimalistic production and a truly amazing sense for hypnotic grooves. Always club ready, always dj friendly.</p>
+        <p>He also even delivers a beautful ambient track called 'Otra Luz' as the cherry on top.</p>
+        <p>Also don't miss his show 'Slaps U' on Relativa Radio (Madrid) where he shines as an incredible record selector</p>
+        <div style="width:100%; max-height: 395px; overflow:hidden;">
+          <iframe
+            width="100%"
+            height="450"
+            scrolling="no"
+            frameborder="no"
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A1998887560&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=false">
+          </iframe>
+        </div>  
+      </div>
+      <div class="release-container">
+        <h3>Rapha Mundi - 31521 [BBD002] 2024/09/02</h3>
+        <button class="buy-btn" onclick="window.open('https://buenobuenodiscos.bandcamp.com/album/31521-ep-bbd002', '_blank')">Buy on Bandcamp</button>
+        <p>Rapha Mundi’s debut EP is finally ready on Buenobueno Discos, the label he runs alongside his fellow DJ / producer PIEK.</p>
+        <p>For this second EP on the label, Rapha brings his deeper side and delivers 5 tracks ranging from House to Techno or Electro, heavily inspired by the Chicago and Detroit scenes. Everything is lovely crafted by his unique style playing and recording with analog gear</p>
+        <div style="width:100%; max-height: 395px; overflow:hidden;">
+          <iframe
+            width="100%"
+            height="450"
+            scrolling="no"
+            frameborder="no"
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A1983416808&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=false">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!------------------------------------------------------------------------------->
+  <!-- MIXES MODAL -->
+  <!------------------------------------------------------------------------------->
+  <div id="mixes" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 class="modal-title">Mixes</h2>
+      <div id="mixes-container">
+      </div>
+      <script>
+        // Lista completa de IDs de tus tracks de SoundCloud
+        const tracks = [
+          "2126786937","2102577783","2106234504","2091563709","2078646984","2036007068",
+          "1930991828","1872359667","1833526506","1785865581","1785839547","1723018131",
+          "1720764285","1720759959","1695880485","1672576275","1651466646","1648186356",
+          "1631626194","1618586463","1612321464","1555816459","1522221253","1516354288",
+          "1490906590","1489791712","1465907251","1440829636","1440827212","1425288493",
+          "1425284929","1423348606","1421766403","1421761528","1403565127","1398556756",
+          "1391848513","1389894475","1388402650","1383862495","1383684022","1379039899",
+          "1375045867","1370554114","1367024929"
+        ];
+        const container = document.getElementById('mixes-container');
+
+        tracks.forEach(id => {
+          const iframe = document.createElement('iframe');
+          iframe.width = '100%';
+          iframe.height = '166';
+          iframe.scrolling = 'no';
+          iframe.frameBorder = 'no';
+          iframe.allow = 'autoplay';
+          iframe.loading = "lazy"; 
+          iframe.src = `https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${id}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=false`;
+          container.appendChild(iframe);
+        });
+      </script>
+
+    </div>
+  </div>
+  <!------------------------------------------------------------------------------->
+  <!------------------------------------------------------------------------------->
+
+  <!------------------------------------------------------------------------------->
+  <!-- VIDEO MODAL -->
+  <!------------------------------------------------------------------------------->
+  <div id="video" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 class="modal-title">Video</h2>
+      <div id="video-container"></div>
+    </div>
+  </div>
+
+  <script>
+    // --- Lista de IDs de YouTube (solo la parte final del enlace) ---
+    const youtubeIds = [
+      "4xt1XFurhFo",
+      "3WS7aKoZ5NE",
+      "B894tKuzxG0",
+      "yk-RGPgcfdI",
+      "_-iyKqGvCaQ",
+      "TuNcf5_p-jg",
+      "ugiAE53Whts",
+      "bBvtlHBt_R8",
+      "a64D0CoxxO0",
+      "csK_NfX28p8",
+      "7oG4Cp6YQ6U",
+      "LFYyQ71pIuE",
+      "vpdHZTober8",
+      "Fa_YdwCfAMs",
+      "mY3RmFIf1lA",
+      "a2Sp7AeBflg",
+      "YAZ6lmy3JnE",
+      "N6AmE7r1aHg",
+      "TNDOiA_XYlk",
+      "4xSujpGGbHw",
+      "3tV70S9fQ-o",
+      "-VOAex0Wx8Q",
+      "CqKC6ZXx6xA",
+      "3cFUuXVDxTI",
+      "qtjugnEKZ1w",
+      "Z9i5BA9Szz4",
+      "FIPDpSwjAxA",
+      "ESGpCcYGrtw"
+    ];
+
+    const videoContainer = document.getElementById("video-container");
+
+    youtubeIds.forEach((id, index) => {
+      const wrapper = document.createElement("div");
+      wrapper.className = "video-container";
+
+      const iframe = document.createElement("iframe");
+      iframe.width = "560";
+      iframe.height = "315";
+      iframe.id = `youtube-${index}`; // ID único
+      iframe.src = `https://www.youtube.com/embed/${id}?enablejsapi=1`; // <- importante
+      iframe.title = "YouTube video player";
+      iframe.frameBorder = "0";
+      iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+      iframe.allowFullscreen = true;
+      iframe.loading = "lazy"; 
+
+      wrapper.appendChild(iframe);
+      videoContainer.appendChild(wrapper);
+    }); 
+  </script>
+  <!------------------------------------------------------------------------------->
+  <!------------------------------------------------------------------------------->
+
+  <!------------------------------------------------------------------------------->
+  <!-- MIXES MODAL -->
+  <!------------------------------------------------------------------------------->
+  <div id="social" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 class="modal-title">Contact/Social</h2>
+      <p class="basic-text">For any inquiries, please contact 
+        <a href="mailto:mauro.buenobuenodiscos@gmail.com" class="basic-text">mauro.buenobuenodiscos@gmail.com</a>
+      </p>
+      <button class="social-btn" onclick="window.open('https://www.instagram.com/rapha.mundi/', '_blank')">Instagram</button>
+      <button class="social-btn" onclick="window.open('https://soundcloud.com/rapha_mundi', '_blank')">Soundcloud</button>
+      <button class="social-btn" onclick="window.open('https://raphamundi.bandcamp.com/', '_blank')">Bandcamp</button>
+      <button class="social-btn" onclick="window.open('https://www.youtube.com/@rapha_mundi', '_blank')">Youtube</button>
+    </div>
+  </div>
+
+  <canvas id="draw"></canvas>
+  <script src="js/script.js"></script>
+
+  <!-- Banner de reproducción -->
+  <div id="nowPlaying" class="now-playing">
+    <div class="marquee">
+      <span id="nowPlayingText">// Playing track //</span>
+    </div>
+  </div>
+
+
+</body>
+</html>
