@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
   /* =======================
      CARRUSEL DE FONDO
   ======================= */
-  const images = ['img/Estanteria.jpg','img/BancoHorizontal.jpg','img/Paisaje.jpg'];
+  const images = ['img/Estanteria.jpg','img/BancoHorizontal.jpg','img/Paisaje.jpg','img/EstanteriaHorizontal.jpg'];
   let index = 0;
   const bg1 = document.getElementById('bg1');
   const bg2 = document.getElementById('bg2');

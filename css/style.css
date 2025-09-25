@@ -226,8 +226,7 @@ body, html {
 }
 
 /* Contenedor de video */
-.modal .video-container {
-  width: 100%;            /* ancho igual al modal */
+.modal .video-container {           /* ancho igual al modal */
   aspect-ratio: 16 / 9;   /* mantiene proporción 16:9 */
   margin-bottom: 1rem;
 }
@@ -313,3 +312,40 @@ body, html {
   }
 }
 
+.gigs-container {
+  border: solid 1px black;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.gigs-container h3 {
+  margin-top: 0;
+}
+
+.gigs-container p {
+  margin-bottom: 0px;
+}
+
+.img-container {
+  border: solid 1px black;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 20px;
+}
+
+.gigs-img {
+    height: 200px;
+    width: 150px;
+    object-fit: contain;
+}
+
+.video-container2 {
+  border: solid 1px black;
+  padding: 20px;
+  padding-bottom: 0px;
+  margin-bottom: 10px;
+}
+
+.video-container2 h3 {
+  margin-top: 0;
+}

@@ -16,6 +16,7 @@
       <li><a href="#" data-modal="releases">Releases</a></li>
       <li><a href="#" data-modal="mixes">Mixes</a></li>
       <li><a href="#" data-modal="video">Video</a></li>
+      <li><a href="#" data-modal="gigs">Gigs</a></li>
       <li><a href="#" data-modal="social">Contact/Social</a></li>
     </ul>
   </nav>
@@ -120,7 +121,9 @@
     <div class="modal-content">
       <span class="close">&times;</span>
       <h2 class="modal-title">Video</h2>
-      <div id="video-container"></div>
+      <div class="video-container2" id="video-container">
+       <h3>Rapha Mundi | Slap Mix 014</h3>
+      </div>
       <button class="social-btn" onclick="window.open('https://www.youtube.com/@rapha_mundi', '_blank')">More on Youtube...</button>
     </div>
   </div>
@@ -129,33 +132,6 @@
     // --- Lista de IDs de YouTube (solo la parte final del enlace) ---
     const youtubeIds = [
       "4xt1XFurhFo",
-      "3WS7aKoZ5NE",
-      "B894tKuzxG0",
-      "yk-RGPgcfdI",
-      "_-iyKqGvCaQ",
-      "TuNcf5_p-jg",
-      // "ugiAE53Whts",
-      // "bBvtlHBt_R8",
-      // "a64D0CoxxO0",
-      // "csK_NfX28p8",
-      // "7oG4Cp6YQ6U",
-      // "LFYyQ71pIuE",
-      // "vpdHZTober8",
-      // "Fa_YdwCfAMs",
-      // "mY3RmFIf1lA",
-      // "a2Sp7AeBflg",
-      // "YAZ6lmy3JnE",
-      // "N6AmE7r1aHg",
-      // "TNDOiA_XYlk",
-      // "4xSujpGGbHw",
-      // "3tV70S9fQ-o",
-      // "-VOAex0Wx8Q",
-      // "CqKC6ZXx6xA",
-      // "3cFUuXVDxTI",
-      // "qtjugnEKZ1w",
-      // "Z9i5BA9Szz4",
-      // "FIPDpSwjAxA",
-      // "ESGpCcYGrtw"
     ];
 
     const videoContainer = document.getElementById("video-container");
@@ -196,6 +172,138 @@
       <button class="social-btn" onclick="window.open('https://soundcloud.com/rapha_mundi', '_blank')">Soundcloud</button>
       <button class="social-btn" onclick="window.open('https://raphamundi.bandcamp.com/', '_blank')">Bandcamp</button>
       <button class="social-btn" onclick="window.open('https://www.youtube.com/@rapha_mundi', '_blank')">Youtube</button>
+    </div>
+  </div>
+  <div id="gigs" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 class="modal-title">Gigs</h2>
+      <div class="gigs-container">
+        <h3>2025:</h3> 
+        <p><b>08-16 PANIZO ROOM</b> @ Peña El Panizo (Murchante) W/ Izurzu, Otal, Elpidio</p>
+        <p><b>08-09 DANZAD MALDITOS</b> @ Jito Alai (Pamplona/Iruña) W/ Breixo Martinez, PIEK</p>
+        <p><b>07-25 LEÑA</b> @ Peña La Jota (Tudela) W/ Elpidio</p>
+        <p><b>07-11 DLC KULTUR GUNEA</b> @ Antoniutti (Pamplona/Iruña) W/ Ez Ez Ez, Gela B2B Ines, Solo Jons, Elpidio, Chica Tequila, Fuzz Man Chu, Monchu Fuck Off, Sr. Lobo</p>
+        <p><b>07-09 SAN FERMÍN</b> @ Katos Disco (Pamplona/Iruña) W/ John Doe, Elpidio</p>
+        <p><b>07-06 DLC KULTUR SHOWCASE</b> @ Katos Disco (Pamplona/Iruña) W/ Elpidio B2B Alba, Solo Jons, Aimar Iririarte, Blonde, Hodei 6z, Izurzu, Pablo Cotton B2B Odd Signals, Cesar Magan</p>
+        <p><b>07-06 SAN FERMÍN</b> @ Plaza Compañía (Pamplona/Iruña) W/ Zombies In Miami, Adrien Body</p>
+        <p><b>06-14 BUENOBUENO FESTIVAL</b> @ Casa de Cultura (Murchante) W/ Dj Feet, Dstant, Celia Carrera, PIEK, Zareza, Mur Music, Elpidio</p>
+        <p><b>04-12 T-MIKA</b> @ TaberMiKa (Murchante) W/ K-5 Sport</p>
+        <p><b>01-17 RAPHA MUNDI B2B PIEK</b> @ Katos Disco (Pamplona/Iruña) W/ PIEK</p>
+      </div>
+      <div class="gigs-container">
+        <h3>2024:</h3> 
+        <p><b>12-31 NYE</b> @ TaberMiKa (Murchante) W/ Elpidio</p>
+        <p><b>12-28 RAPHA MUNDI</b> @ Nicolette (Pamplona/Iruña)</p>
+        <p><b>12-06 SONIDO EL SANTO #002</b> @ El Santo Club (Tudela)  W/ Elpidio</p>
+        <p><b>11-09 HOGUERA</b> @ Echegoyen (Murchante) W/ Elpidio</p>
+        <p><b>10-26 T-MIKA</b> @ TaberMiKa (Murchante) W/ PIEK</p>
+        <p><b>10-26 AZADA FEST</b> @ Plaza de los Fueros (Murchante) W/ PIEK</p>
+        <p><b>10-12 T-MIKA</b> @ TaberMiKa (Murchante) W/ Zareza, Angel Deep</p>
+        <p><b>08-19 SAN ROQUE</b> @ Echegoyen (Murchante) W/ Elpidio</p>
+        <p><b>08-16 PANIZO ROOM AFTERPARTY</b> @ Echegoyen (Murchante) W/ Pablo Cotton, Elpidio, Zareza, Josu de Orta, Charles Marinson, Angel Deep</p>
+        <p><b>08-16 PANIZO ROOM</b> @ Peña El Panizo (Murchante) W/ Pablo Cotton, Elpidio, Zareza, Josu de Orta, Charles Marinson, Angel Deep</p>
+        <p><b>08-15 SAN ROQUE</b> @ TaberMiKa (Murchante) W/ Elpidio</p>
+        <p><b>08-14 SAN ROQUE</b> @ TaberMiKa (Murchante) W/ PIEK</p>
+        <p><b>07-27 SANTA ANA</b> @ El Santo Club (Tudela)  W/ Elpidio</p>
+        <p><b>07-19 POST THERAPY</b> @ Katos Disco (Pamplona/Iruña)  W/ Elpidio</p>
+        <p><b>07-12 SAN FERMÍN</b> @ Inopia (Pamplona/Iruña) W/ PIEK</p>
+        <p><b>07-11 BUENOBUENO DISCOS NIGHT</b> @ Katos Disco (Pamplona/Iruña)  W/ PIEK, Elpidio</p>
+        <p><b>07-06 DLC KULTUR SHOWCASE</b> @ Katos Disco (Pamplona/Iruña) W/ Elpidio, Solo Jons, Hodei 6z, Izurzu, Pablo Cotton B2B Odd Signals, Cesar Magan</p>
+        <p><b>06-29 JUVENTUD</b> @ TaberMiKa (Murchante) W/ Angel Deep</p>
+        <p><b>06-28 JUVENTUD</b> @ Echegoyen (Murchante)</p>     
+        <p><b>06-09 RAPHA MUNDI</b> @ Nicolette (Pamplona/Iruña)</p>
+        <p><b>05-25 DANTZ POINT</b> @ Ciudadela (Pamplona/Iruña) w/ Der Dritte Raum, Alienata, Nahoomie, Celia Carrera, Pablo Cotton</p>
+        <p><b>05-11 ME LIO CLUB</b> @ MeLio (Cascante) w/ Zareza, Angel deep</p>
+        <p><b>05-04 THE END</b> @ DeJaVu (Tudela)  W/ Elpidio</p>
+        <p><b>05-04 HOLZ UND BLECH FESTIVAL</b> Holz Und Blech @ (Azkoitia) w/ /Goo!, Aibofobia, Acelga, Alberto Mingo, Albi, Balza, Beba, Borja S, Checkboyz, Costas, Dardara, Depression, Elektropeña, Galiano, Garai, Georgio, Hugo, Javier Carvallo, Josu Aramburu, Koldo Intermusic, Krakow, Lino, Loreak, Lumiere, Maya B, Mr Soto, Munizzio, Murxi, Nelli, Ope Loeb, Panda, Pedro Berazadi, Pizky, Poggio, Porruu, Suupe, Ulea, Unai Trotti, Victorio, Vita V, Willy, Xugua, Zatibi</p>
+        <p><b>04-27 T-MIKA</b> @ TaberMiKa (Murchante) W/ Celia Carrera, Elpidio</p>
+        <p><b>04-20 JORNADAS DE LA VERDURA</b> @ DeJaVu (Tudela)  W/ Elpidio</p>
+        <p><b>04-01 T-MIKA</b> @ TaberMiKa (Murchante) W/ Zareza, Angel Deep</p>
+        <p><b>03-22 RAPHA MUNDI</b> @ Nicolette (Pamplona/Iruña)</p>
+        <p><b>03-09 ME LIO CLUB</b> @ MeLio (Cascante) w/ J.Ruan, Angel deep</p>
+        <p><b>02-24 DEJAVU</b> @ DeJaVu (Tudela)  W/ Elpidio</p>
+        <p><b>02-17 ME LIO CLUB</b> @ MeLio (Cascante) w/ Elpidio, Angel deep</p>
+        <p><b>02-16 KATOS</b> @ Katos Disco (Pamplona/Iruña) w/ Urkoan</p>
+        <p><b>02-10 T-MIKA</b> @ TaberMiKa (Murchante) W/ Zareza, Diego Sanchez</p>
+        <p><b>02-03 RE OPENING</b> @ DeJaVu (Tudela)  W/ Elpidio</p>
+        <p><b>01-26 KATOS</b> @ Katos Disco (Pamplona/Iruña)</p>
+        <p><b>01-18 RAPHA MUNDI</b> @ Nicolette (Pamplona/Iruña)</p>
+        <p><b>01-05 REYES</b> @ DeJaVu (Tudela)  W/ Elpidio</p>
+      </div>
+      <div class="gigs-container">
+        <h3>2023:</h3> 
+        <p><b>12-29 ME LIO CLUB</b> @ MeLio (Cascante) w/ Elpidio</p>
+        <p><b>12-25 NOCHEBUENA</b> @ TaberMiKa (Murchante) W/ Elpidio</p>
+        <p><b>12-23 GUARICHE</b> @ Ozone (Pamplona/Iruña) W/ Budin, Adrian Alegria, Señora, Bihotza, /Goo!, Txandal Vandals, NC320, PPR, Kimikari, Sunny Wrigth, Tronis, Pablo Cotton, Odd Signals, Arsenike, Makeda, Imperial Blondie, Aran</p>
+        <p><b>12-16 NOCHE LABORAL</b> @ DeJaVu (Tudela)  W/ Elpidio</p>
+        <p><b>12-09 STRONG</b> @ Strong Club (Pamplona/Iruña)  W/ Solo Jons, Elpidio</p>
+        <p><b>12-07 CASERON</b> @ Caseron (Cintruenigo)</p>
+        <p><b>12-02 RAPHA MUNDI</b> @ Nicolette (Pamplona/Iruña)</p>
+        <p><b>11-25 RAPHA MUNDI</b> @ Nicolette (Pamplona/Iruña)</p>
+        <p><b>11-18 T-MIKA</b> @ TaberMiKa (Murchante)</p>
+        <p><b>11-10 T-MIKA</b> @ w/ Angel Deep, Zareza</p>
+        <p><b>11-04 GAMBETEO</b> @ DeJaVu (Tudela)  W/ Elpidio</p>
+        <p><b>10-28 RAPHA MUNDI</b> @ Nicolette (Pamplona/Iruña)</p>
+        <p><b>10-14 DIONI'S</b> @ Dioni's (San Sebastián/Donostia)</p>
+        <p><b>10-12 T-MIKA</b> @ w/ Angel Deep</p>
+        <p><b>09-30 RAPHA MUNDI</b> @ Nicolette (Pamplona/Iruña)</p>
+        <p><b>09-30 SF TXIKI</b> @ Nicolette (Pamplona/Iruña) w/ Pablo Cotton</p>
+        <p><b>09-16 TECHNO FEST</b> @ La Jarana (Malón)  W/ Mur Music, Zareza, Angel Deep, Javier Iranzo</p>
+        <p><b>09-16 DEJAVU</b> @ DeJaVu (Tudela)  W/ Elpidio</p>
+        <p><b>09-06 KATOS</b> @ Katos Disco (Pamplona/Iruña)</p>
+        <p><b>08-31 FIESTAS ABLITAS</b> @ Nicolas (Ablitas)</p>
+        <p><b>08-31 FIESTAS CASCANTE</b> @ Pub La Luna (Cascante)</p>
+        <p><b>08-14 T-MIKA</b> @ TaberMiKa (Murchante) w/ Zareza</p>
+        <p><b>08-19 PANIZO ROOM AFTERPARTY</b> @ Garcia (Murchante) w/ Diego Sanchez, Zareza, Angel Deep, Mur Music, Charles Marinson</p>
+        <p><b>08-19 PANIZO ROOM</b> @ Peña El Panizo (Murchante) w/ Diego Sanchez, Zareza, Angel Deep, Mur Music, Charles Marinson</p>
+        <p><b>08-14 COHETE</b> @ w/ Elpidio</p>
+        <p><b>08-12 RAPHA MUNDI</b> @ Nicolette (Pamplona/Iruña)</p>
+        <p><b>08-11 KATOS</b> @ Katos Disco (Pamplona/Iruña)</p>
+        <p><b>07-27 TAS! TAS!</b> @ DeJaVu (Tudela)  W/ Elpidio, Garnich</p>
+        <p><b>07-23 PRE</b> @ DeJaVu (Tudela)  W/ Elpidio</p>
+        <p><b>07-22 KATOS</b> @ Katos Disco (Pamplona/Iruña)</p>
+        <p><b>07-13 BUENO BUENO SHOWCASE</b> @ Katos Disco (Pamplona/Iruña) w/ PIEK</p>
+        <p><b>07-07 SAN FERMÍN</b> @ Inopia (Pamplona/Iruña) W/ PIEK</p>
+        <p><b>07-06 DLC KULTUR SHOWCASE</b> @ Katos Disco (Pamplona/Iruña) W/ Elpidio, Señora, Bonera, Pablo Cotton, Odd Signals, Urkoan</p>
+        <p><b>07-01 ME LIO CLUB</b> @ MeLio (Cascante)</p>
+        <p><b>06-30 KATOS</b> @ Katos Disco (Pamplona/Iruña) w/ Urkoan</p>
+        <p><b>06-30 MOLA MOLA</b> @ Mola Mola Bar (Orio) w/ PIEK, Divorce From New York</p>
+        <p><b>06-02 RAPHA MUNDI</b> @ Nicolette (Pamplona/Iruña)</p>
+        <p><b>05-13 DEJAVU</b> @ DeJaVu (Tudela)  W/ Elpidio</p>
+        <p><b>05-06 THE END...</b> @ Eliseo (Murchante)  W/ Elpidio</p>
+        <p><b>04-29 RED BOX</b> @ Ozone (Pamplona/Iruña)  W/ Mur Music</p>
+        <p><b>04-29 ZER-B</b> @ Zer-B (San Adrian)</p>
+        <p><b>04-15 CLIC!</b> @ Clic (Pamplona/ Iruña)</p>
+        <p><b>04-10 LA VIRGEN</b> @ Eliseo (Murchante)  W/ Zareza, Nicot33</p>
+        <p><b>04-06 ME LIO CLUB</b> @ MeLio (Cascante)</p>
+        <p><b>03-19 BACCARA</b> @ Baccara (Pamplona/ Iruña)</p>
+        <p><b>03-04 SAN QUEREMOS</b> @ Eliseo (Murchante)</p>
+        <p><b>02-19 CARNAVAL</b> @ Eliseo (Murchante) w/ Zareza</p>
+        <p><b>02-18 TARDEO OASIS</b> @ Oasis (Calahorra)</p>
+        <p><b>02-17 KATOS</b> @ Katos Disco (Pamplona/Iruña) w/ Pablo Cotton, Urkoan</p>
+        <p><b>02-12 ME LIO CLUB</b> @ MeLio (Cascante)</p>
+        <p><b>01-28 RUE</b> @ La Rue (Pamplona/Iruña) w/ Pablo Cotton, Sentex, Bonera</p>
+        <p><b>01-21 RED BOX</b> @ Ozone (Pamplona/Iruña) w/ Pablo Cotton, Minitec, Elpidio</p>
+        <p><b>01-05 REYES</b> @ DeJaVu (Tudela)  W/ Elpidio</p>
+      </div>
+      <div class="gigs-container">
+        <h3>2022:</h3> 
+        <p><b>12-31 NOCHEVIEJA</b> @ Eliseo (Murchante) w/ Zareza, Hodei 6z</p>
+        <p><b>12-30 SAN QUEREMOS</b> @ Eliseo (Murchante) w/ Elpidio</p>
+        <p><b>12-25 NOCHEBUENA</b> @ Eliseo (Murchante) w/ Zareza, Cesar Magan</p>
+        <p><b>12-19 VOLUMEN</b> @ Katos Disco (Pamplona/Iruña) w/ Solo Jons</p>
+        <p><b>12-12 PORQUE SI!</b> @ Eliseo (Murchante) w/ Mundo de Tulsa DJ</p>
+        <p><b>12-10 DLC KULTUR SHOWCASE</b> @ Katos Disco (Pamplona/Iruña) W/ Pablo Cotton, Señora, Ron Damon, Elpidio, Kiliki Frexko</p>
+        <p><b>12-03 DBDB CLUB NIGHTS</b> @ Dabadaba (Pamplona/Iruña) W/ Mainline Magic Orchestra, Elpidio</p>
+        <p><b>11-29 PETIT COMITE</b> @ Nicolette (Pamplona/Iruña)</p>  
+        <p><b>11-19 RED BOX</b> @ Ozone (Pamplona/Iruña)</p>
+        <p><b>11-19 WACKY PLAYERS</b> @ DeJaVu (Tudela)  W/ Elpidio</p>
+        <p><b>11-18 B2B ARTZE</b> @ Nicolette (Pamplona/Iruña)</p>  
+        <p><b>11-11 HOGUERA</b> @ Eliseo (Murchante) w/Zareza</p>
+        <p><b>10-29 HALLOWEEN</b> @ Eliseo (Murchante) w/Zareza</p>
+        <p><b>10-29 RAPHA MUNDI BDAY</b> @ Eliseo (Murchante) w/Zareza, Elpidio, J.Ruan, E.G.R</p>
+      </div>
     </div>
   </div>
 
