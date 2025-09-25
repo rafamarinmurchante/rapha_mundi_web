@@ -338,14 +338,3 @@ body, html {
     width: 150px;
     object-fit: contain;
 }
-
-.video-container2 {
-  border: solid 1px black;
-  padding: 20px;
-  padding-bottom: 0px;
-  margin-bottom: 10px;
-}
-
-.video-container2 h3 {
-  margin-top: 0;
-}
