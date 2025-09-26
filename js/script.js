@@ -189,3 +189,49 @@ document.addEventListener("DOMContentLoaded", () => {
   setLang(savedLang);
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  let activeVideo = null;
+
+  document.querySelectorAll('.video-wrapper').forEach(wrapper => {
+    const img = wrapper.querySelector('img');
+
+    img.addEventListener('click', () => {
+      if (activeVideo && activeVideo !== wrapper) {
+        const iframe = activeVideo.querySelector('iframe');
+        if (iframe) {
+          iframe.remove();
+          activeVideo.querySelector('img').style.display = 'block';
+        }
+        activeVideo = null;
+      }
+
+      if (wrapper.querySelector('iframe')) return;
+
+      img.style.display = 'none';
+
+      const iframe = document.createElement('iframe');
+      iframe.src = img.dataset.video;
+      iframe.frameBorder = '0';
+      iframe.allow =
+        'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      iframe.allowFullscreen = true;
+
+      wrapper.appendChild(iframe);
+      activeVideo = wrapper;
+    });
+  });
+
+  // Detener video al cerrar modal
+  document.querySelectorAll('#video .close').forEach(closeBtn => {
+    closeBtn.addEventListener('click', () => {
+      document.querySelectorAll('#video iframe').forEach(iframe => {
+        iframe.src = '';
+        iframe.remove();
+      });
+      document.querySelectorAll('#video .video-thumb').forEach(img => {
+        img.style.display = 'block';
+      });
+      activeVideo = null;
+    });
+  });
+});
