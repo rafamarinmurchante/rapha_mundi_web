@@ -81,7 +81,7 @@ body, html {
 
 /* ===== MODAL ===== */
 :root{
-  --color-fondo-modal: white;
+  --color-fondo-modal: black;
 }
 
 .modal {
@@ -97,7 +97,7 @@ body, html {
 
 .modal-content {
   background-color: var(--color-fondo-modal); 
-  color: #000;            /* texto negro */
+  color: white;            /* texto negro */
   margin: 5% auto;
   padding: 20px;
   max-width: 900px;
@@ -108,14 +108,14 @@ body, html {
   position: absolute;
   top: 10px;
   right: 20px;   /* siempre a la derecha */
-  color: #000;
+  color: #797979;
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
 }
 
 .modal .close:hover {
-  color: #555; /* efecto hover */
+  color: white; /* efecto hover */
 }
 
 .modal-title {
@@ -254,25 +254,26 @@ body, html {
 
 
 .basic-text{
-  font-size: 22px;
-  color: black;
+  font-size: 25px;
+  color: white;
 }
 
 .buy-btn {
-  border:2px solid #ccc; background:transparent; padding:0.25rem 0.5rem; border-radius:4px;
+  border:2px solid #797979;; background:transparent; padding:0.25rem 0.5rem; border-radius:4px;
   cursor:pointer;
   font-family: "Courier New", monospace;
   font-weight: bold;
+  color: #797979;
 
 }
   .buy-btn:hover {
-  color: black;             /* texto azul */
-  border-color: black;      /* borde a juego */
+  color: white;             /* texto azul */
+  border-color: white;      /* borde a juego */
   
 }
 
 .release-container {
-  border: solid 1px black;
+  border: solid 1px white;
   padding: 20px;
   margin-bottom: 20px;
 }
@@ -282,16 +283,16 @@ body, html {
 }
 
 .social-btn {
-  border:2px solid #ccc; background:transparent; padding:0.25rem 0.5rem; border-radius:4px;
+  border:2px solid #797979; background:transparent; padding:0.25rem 0.5rem; border-radius:4px;
   cursor:pointer;
   font-family: "Courier New", monospace;
   font-weight: bold;
   font-size: 20px;
-
+  color: #797979;
 }
   .social-btn:hover {
-  color: black;             /* texto azul */
-  border-color: black;      /* borde a juego */
+  color: white;             /* texto azul */
+  border-color: white;      /* borde a juego */
   
 }
 
@@ -309,7 +310,7 @@ body, html {
 }
 
 .gigs-container {
-  border: solid 1px black;
+  border: solid 1px white;
   padding: 20px;
   margin-bottom: 20px;
 }
@@ -323,7 +324,7 @@ body, html {
 }
 
 .img-container {
-  border: solid 1px black;
+  border: solid 1px white;
   padding: 20px;
   margin-bottom: 20px;
   width: 20px;
@@ -361,8 +362,24 @@ body, html {
 
 .video-container {
   padding: 10px;
-  border: black solid 1px;
+  border: solid 1px white;
 }
 .video-container h3{
     margin-top: 0;
+}
+
+.modal.open {
+  display: block; /* el modal con la clase open estará visible */
+}
+
+.news-container {
+  border: solid 1px white;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.news-container h3 {
+  margin-top: 0;
+  font-size: 30px;
 }

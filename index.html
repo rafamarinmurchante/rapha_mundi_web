@@ -12,14 +12,54 @@
   <!-- Barra de navegación -->
   <nav class="menu">
     <ul>
-      <li><a href="#" data-modal="bio">Bio</a></li>
-      <li><a href="#" data-modal="releases">Releases</a></li>
-      <li><a href="#" data-modal="mixes">Mixes</a></li>
-      <li><a href="#" data-modal="video">Video</a></li>
-      <li><a href="#" data-modal="gigs">Gigs</a></li>
-      <li><a href="#" data-modal="social">Contact/Social</a></li>
+      <li><a href="#" data-modal="news" data-translate="newsTitle">Noticias</a></li>
+      <li><a href="#" data-modal="bio" data-translate="bioTitle">Biografía</a></li>
+      <li><a href="#" data-modal="releases" data-translate="releasesTitle">Lanzamientos</a></li>
+      <li><a href="#" data-modal="mixes" data-translate="mixesTitle">Sesiones</a></li>
+      <li><a href="#" data-modal="video" data-translate="videoTitle">Vídeos</a></li>
+      <li><a href="#" data-modal="gigs" data-translate="gigsTitle">Agenda</a></li>
+      <li><a href="#" data-modal="social" data-translate="socialTitle">Contacto</a></li>
+      <!-- Botón de idioma como ítem del menú -->
+      <li><a href="#" id="lang-toggle">EN/ES</a></li>
     </ul>
   </nav>
+
+  <!------------------------------------------------------------------------------->
+  <!-- NEWS -->
+  <!------------------------------------------------------------------------------->  
+  <div id="news" class="modal show">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 class="modal-title" data-translate="newsTitle">Noticias</h2>
+      <div id="news-list">
+        
+        <div class="news-container">    
+            <h3 data-translate="new1Title">¡Vuelve Rapha Mundi Slaps U!</h3> 
+            <img src="img/news/2025-10-09-new.jpg" alt="Noticia 1" style="width:100%; object-fit:cover;">
+            <p data-translate="new1Text1"></p>
+            <p data-translate="new1Text2">
+            </p>
+            <button class="social-btn"
+              onclick="window.open('https://www.youtube.com/@rapha_mundi', '_blank')" data-translate="new1ButtonText">
+              Escuchalo en Radio Relativa
+            </button>
+            <p>
+              [09/10/2025]
+            </p>
+        </div>
+        <!-- <div class="news-container">
+          <img src="img/noticia2.jpg" alt="Noticia 2" style="width:100%; max-height:200px; object-fit:cover;">
+          <h3>Noticia 2</h3>
+          <p>Texto noticia 2</p>
+        </div>
+        <div class="news-container">
+          <img src="img/noticia3.jpg" alt="Noticia 3" style="width:100%; max-height:200px; object-fit:cover;">
+          <h3>Noticia 3</h3>
+          <p>Texto noticia 3</p>
+        </div> -->
+      </div>
+    </div>
+  </div>
 
   <!------------------------------------------------------------------------------->
   <!-- BIO MODAL -->
@@ -27,18 +67,11 @@
   <div id="bio" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
-
-      <!-- Selector de idioma -->
-
-      <h2 id="bio-title" class="modal-title">Rapha Mundi's Bio</h2>
-      <div class="lang-selector">
-        <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
-        <button class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
-      </div>
-      <p data-index="0" class="basic-text"></p>
-      <p data-index="1" class="basic-text"></p>
-      <p data-index="2" class="basic-text"></p>
-      <p data-index="3" class="basic-text"></p>
+      <h2 id="bio-title" class="modal-title" data-translate="bioModalTitle"></h2>
+      <p data-index="0" class="basic-text" data-translate="bioParagraph1"></p>
+      <p data-index="1" class="basic-text" data-translate="bioParagraph2"></p>
+      <p data-index="2" class="basic-text" data-translate="bioParagraph3"></p>
+      <p data-index="3" class="basic-text" data-translate="bioParagraph4"></p>
     </div>
   </div>
 <!------------------------------------------------------------------------------->
@@ -50,44 +83,35 @@
   <div id="releases" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
-      <h2 class="modal-title">Releases</h2>
+      <h2 class="modal-title" data-translate="releasesTitle">Lanzamientos</h2>
+
       <div class="release-container">
-        <h3>Rapha Mundi - Bonanza [BBD004] 2025/04/03</h3> 
-        <button class="buy-btn" onclick="window.open('https://buenobuenodiscos.bandcamp.com/album/bonanza-ep-bbd004', '_blank')">Buy on Bandcamp</button>
-        <p>Rafael Marín, best known as Rapha Mundi is back on Buenobueno Discos with a solid 6 track EP titled Bonanza EP. The super prolific, hard working hero from the small town of Murchante, in Spain, keeps pushing boundaries on his personal journey through music.</p>
-        <p>On this record Rapha explores the deeper sides of House and Techno with a minimalistic production and a truly amazing sense for hypnotic grooves. Always club ready, always dj friendly.</p>
-        <p>He also even delivers a beautful ambient track called 'Otra Luz' as the cherry on top.</p>
-        <p>Also don't miss his show 'Slaps U' on Relativa Radio (Madrid) where he shines as an incredible record selector</p>
+        <h3 data-translate="release1Title">Rapha Mundi - Bonanza [BBD004] 2025/04/03</h3>
+        <button class="buy-btn" data-translate="buyOnBandcamp" onclick="window.open('https://buenobuenodiscos.bandcamp.com/album/bonanza-ep-bbd004', '_blank')">Comprar en Bandcamp</button>
+        <p data-translate="release1Text1"></p>
+        <p data-translate="release1Text2"></p>
+        <p data-translate="release1Text3"></p>
+        <p data-translate="release1Text4"></p>
         <div style="width:100%; max-height: 395px; overflow:hidden;">
-          <iframe
-            width="100%"
-            height="450"
-            scrolling="no"
-            frameborder="no"
-            allow="autoplay"
-            loading="lazy"
+          <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" loading="lazy"
             src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A1998887560&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=false">
           </iframe>
-        </div>  
+        </div>
       </div>
+
       <div class="release-container">
-        <h3>Rapha Mundi - 31521 [BBD002] 2024/09/02</h3>
-        <button class="buy-btn" onclick="window.open('https://buenobuenodiscos.bandcamp.com/album/31521-ep-bbd002', '_blank')">Buy on Bandcamp</button>
-        <p>Rapha Mundi’s debut EP is finally ready on Buenobueno Discos, the label he runs alongside his fellow DJ / producer PIEK.</p>
-        <p>For this second EP on the label, Rapha brings his deeper side and delivers 5 tracks ranging from House to Techno or Electro, heavily inspired by the Chicago and Detroit scenes. Everything is lovely crafted by his unique style playing and recording with analog gear</p>
+        <h3 data-translate="release2Title">Rapha Mundi - 31521 [BBD002] 2024/09/02</h3>
+        <button class="buy-btn" data-translate="buyOnBandcamp" onclick="window.open('https://buenobuenodiscos.bandcamp.com/album/31521-ep-bbd002', '_blank')">Comprar en Bandcamp</button>
+        <p data-translate="release2Text1"></p>
+        <p data-translate="release2Text2"></p>
         <div style="width:100%; max-height: 395px; overflow:hidden;">
-          <iframe
-            width="100%"
-            height="450"
-            scrolling="no"
-            frameborder="no"
-            allow="autoplay"
-            loading="lazy"
+          <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" loading="lazy"
             src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A1983416808&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=false">
           </iframe>
         </div>
       </div>
-      <button class="social-btn" onclick="window.open('https://raphamundi.bandcamp.com/', '_blank')">More on Bandcamp...</button>
+
+      <button class="social-btn" data-translate="moreOnBandcamp" onclick="window.open('https://raphamundi.bandcamp.com/', '_blank')">Más en Bandcamp...</button>
     </div>
   </div>
   <!------------------------------------------------------------------------------->
@@ -99,7 +123,7 @@
   <div id="mixes" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
-      <h2 class="modal-title">Mixes</h2>
+      <h2 class="modal-title" data-translate="mixesTitle">Sesiones</h2>
       <div id="mixes-container">
         <iframe
             width="100%"
@@ -110,7 +134,10 @@
             loading="lazy"
             src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A1567648258&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=false">
         </iframe>
-        <button class="social-btn" onclick="window.open('https://soundcloud.com/rapha_mundi', '_blank')">More on Soundcloud...</button>
+        <button class="social-btn" data-translate="moreOnSoundcloud"
+          onclick="window.open('https://soundcloud.com/rapha_mundi', '_blank')">
+          Más en Soundcloud...
+        </button>
       </div>
     </div>
   </div>
@@ -122,362 +149,29 @@
   <!------------------------------------------------------------------------------->
   <div id="video" class="modal">
     <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2 class="modal-title">Videos</h2>
-      <div class="video-container">
-        <h3>Rapha Mundi | Slap Mix 014</h3>
-        <div class="video-wrapper">
-          <img
-            src="https://img.youtube.com/vi/4xt1XFurhFo/maxresdefault.jpg"
-            alt="Rapha Mundi | Slap Mix 014"
-            class="video-thumb"
-            data-video="https://www.youtube.com/embed/4xt1XFurhFo?autoplay=1"
-          >
-        </div>
-      </div>
-      <div class="video-container">
-        <h3>Rapha Mundi | Slap Mix 013</h3>
-        <div class="video-wrapper">
-          <img
-            src="https://img.youtube.com/vi/3WS7aKoZ5NE/maxresdefault.jpg"
-            alt="Otro Video"
-            class="video-thumb"
-            data-video="https://www.youtube.com/embed/3WS7aKoZ5NE?autoplay=1"
-          >
-        </div>
-      </div>
-      <div class="video-container">
-        <h3>Rapha Mundi | Slap Mix 012</h3>
-        <div class="video-wrapper">
-          <img
-            src="https://img.youtube.com/vi/ugiAE53Whts/maxresdefault.jpg"
-            alt="Otro Video"
-            class="video-thumb"
-            data-video="https://www.youtube.com/embed/ugiAE53Whts?autoplay=1"
-          >
-        </div>
-      </div>
-      <div class="video-container">
-        <h3>Rapha Mundi | Slap Mix 011</h3>
-        <div class="video-wrapper">
-          <img
-            src="https://img.youtube.com/vi/yk-RGPgcfdI/maxresdefault.jpg"
-            alt="Otro Video"
-            class="video-thumb"
-            data-video="https://www.youtube.com/embed/yk-RGPgcfdI?autoplay=1"
-          >
-        </div>
-      </div>
-      <div class="video-container">
-        <h3>Rapha Mundi | Slap Mix 010</h3>
-        <div class="video-wrapper">
-          <img
-            src="https://img.youtube.com/vi/_-iyKqGvCaQ/maxresdefault.jpg"
-            alt="Otro Video"
-            class="video-thumb"
-            data-video="https://www.youtube.com/embed/_-iyKqGvCaQ?autoplay=1"
-          >
-        </div>
-      </div>
-      <div class="video-container">
-        <h3>Rapha Mundi | Slap Mix 009</h3>
-        <div class="video-wrapper">
-          <img
-            src="https://img.youtube.com/vi/TuNcf5_p-jg/maxresdefault.jpg"
-            alt="Otro Video"
-            class="video-thumb"
-            data-video="https://www.youtube.com/embed/TuNcf5_p-jg?autoplay=1"
-          >
-        </div>
-      </div>
-      <div class="video-container">
-        <h3>Rapha Mundi | Slap Mix 008</h3>
-        <div class="video-wrapper">
-          <img
-            src="https://img.youtube.com/vi/ugiAE53Whts/maxresdefault.jpg"
-            alt="Otro Video"
-            class="video-thumb"
-            data-video="https://www.youtube.com/embed/ugiAE53Whts?autoplay=1"
-          >
-        </div>
-      </div>
-      <div class="video-container">
-        <h3>Rapha Mundi | Slap Mix 007</h3>
-        <div class="video-wrapper">
-          <img
-            src="https://img.youtube.com/vi/bBvtlHBt_R8/maxresdefault.jpg"
-            alt="Otro Video"
-            class="video-thumb"
-            data-video="https://www.youtube.com/embed/bBvtlHBt_R8?autoplay=1"
-          >
-        </div>
-      </div>
-      <div class="video-container">
-        <h3>Rapha Mundi | Slap Mix 006</h3>
-        <div class="video-wrapper">
-          <img
-            src="https://img.youtube.com/vi/a64D0CoxxO0/maxresdefault.jpg"
-            alt="Otro Video"
-            class="video-thumb"
-            data-video="https://www.youtube.com/embed/a64D0CoxxO0?autoplay=1"
-          >
-        </div>
-      </div>
-      <div class="video-container">
-        <h3>Rapha Mundi | Slap Mix 005</h3>
-        <div class="video-wrapper">
-          <img
-            src="https://img.youtube.com/vi/csK_NfX28p8/maxresdefault.jpg"
-            alt="Otro Video"
-            class="video-thumb"
-            data-video="https://www.youtube.com/embed/csK_NfX28p8?autoplay=1"
-          >
-        </div>
-      </div>
-      <div class="video-container">
-        <h3>Rapha Mundi B2B Elpidio B2B Pablo Cotton | Panizo Room 2024</h3>
-        <div class="video-wrapper">
-          <img
-            src="https://img.youtube.com/vi/7oG4Cp6YQ6U/maxresdefault.jpg"
-            alt="Otro Video"
-            class="video-thumb"
-            data-video="https://www.youtube.com/embed/7oG4Cp6YQ6U?autoplay=1"
-          >
-        </div>
-      </div>
-      <div class="video-container">
-        <h3>Rapha Mundi | Slap Mix 004</h3>
-        <div class="video-wrapper">
-          <img
-            src="https://img.youtube.com/vi/LFYyQ71pIuE/maxresdefault.jpg"
-            alt="Otro Video"
-            class="video-thumb"
-            data-video="https://www.youtube.com/embed/LFYyQ71pIuE?autoplay=1"
-          >
-        </div>
-      </div>
-      <div class="video-container">
-        <h3>Rapha Mundi | Slap Mix 003</h3>
-        <div class="video-wrapper">
-          <img
-            src="https://img.youtube.com/vi/vpdHZTober8/maxresdefault.jpg"
-            alt="Otro Video"
-            class="video-thumb"
-            data-video="https://www.youtube.com/embed/vpdHZTober8?autoplay=1"
-          >
-        </div>
-      </div>
-      <div class="video-container">
-        <h3>Rapha Mundi | Slap Mix 002</h3>
-        <div class="video-wrapper">
-          <img
-            src="https://img.youtube.com/vi/Fa_YdwCfAMs/maxresdefault.jpg"
-            alt="Otro Video"
-            class="video-thumb"
-            data-video="https://www.youtube.com/embed/Fa_YdwCfAMs?autoplay=1"
-          >
-        </div>
-      </div>
-      <div class="video-container">
-        <h3>Rapha Mundi | Slap Mix 001</h3>
-        <div class="video-wrapper">
-          <img
-            src="https://img.youtube.com/vi/mY3RmFIf1lA/maxresdefault.jpg"
-            alt="Otro Video"
-            class="video-thumb"
-            data-video="https://www.youtube.com/embed/mY3RmFIf1lA?autoplay=1"
-          >
-        </div>
-      </div>
-      <div class="video-container">
-        <h3>10 Vinyl Records Mix #003 with Rapha Mundi [Disco, Caribbean, Zouk, Italo...]</h3>
-        <div class="video-wrapper">
-          <img
-            src="https://img.youtube.com/vi/a2Sp7AeBflg/maxresdefault.jpg"
-            alt="Otro Video"
-            class="video-thumb"
-            data-video="https://www.youtube.com/embed/a2Sp7AeBflg?autoplay=1"
-          >
-        </div>
-      </div>
-      <div class="video-container">
-        <h3>10 Vinyl Records Mix #002 with Rapha Mundi [Techno, House, Tribal…]</h3>
-        <div class="video-wrapper">
-          <img
-            src="https://img.youtube.com/vi/YAZ6lmy3JnE/maxresdefault.jpg"
-            alt="Otro Video"
-            class="video-thumb"
-            data-video="https://www.youtube.com/embed/YAZ6lmy3JnE?autoplay=1"
-          >
-        </div>
-      </div>
-      <div class="video-container">
-        <h3>Rapha Mundi | Slap Mix 001</h3>
-        <div class="video-wrapper">
-          <img
-            src="https://img.youtube.com/vi/mY3RmFIf1lA/maxresdefault.jpg"
-            alt="Otro Video"
-            class="video-thumb"
-            data-video="https://www.youtube.com/embed/mY3RmFIf1lA?autoplay=1"
-          >
-        </div>
-      </div>
-      <div class="video-container">
-        <h3>10 Vinyl Records Mix #001 with Rapha Mundi [Techno, Trance, Minimal...]</h3>
-        <div class="video-wrapper">
-          <img
-            src="https://img.youtube.com/vi/9NyHTVcMV88/maxresdefault.jpg"
-            alt="Otro Video"
-            class="video-thumb"
-            data-video="https://www.youtube.com/embed/9NyHTVcMV88?autoplay=1"
-          >
-        </div>
-      </div>
-      <div class="video-container">
-        <h3>Rapha Mundi Slaps U Ep. #024 (Sept. 2023) [DLC Kultur]</h3>
-        <div class="video-wrapper">
-          <img
-            src="https://img.youtube.com/vi/N6AmE7r1aHg/maxresdefault.jpg"
-            alt="Otro Video"
-            class="video-thumb"
-            data-video="https://www.youtube.com/embed/N6AmE7r1aHg?autoplay=1"
-          >
-        </div>
-      </div>
-      <div class="video-container">
-        <h3>Rapha Mundi | Dance Corners X Panizo Club 2023</h3>
-        <div class="video-wrapper">
-          <img
-            src="https://img.youtube.com/vi/TNDOiA_XYlk/maxresdefault.jpg"
-            alt="Otro Video"
-            class="video-thumb"
-            data-video="https://www.youtube.com/embed/TNDOiA_XYlk?autoplay=1"
-          >
-        </div>
-      </div>
-      <div class="video-container">
-        <h3>Rapha Mundi Slaps U Ep. #023 (Aug. 2023) [DLC Kultur]</h3>
-        <div class="video-wrapper">
-          <img
-            src="https://img.youtube.com/vi/4xSujpGGbHw/maxresdefault.jpg"
-            alt="Otro Video"
-            class="video-thumb"
-            data-video="https://www.youtube.com/embed/4xSujpGGbHw?autoplay=1"
-          >
-        </div>
-      </div>
-      <div class="video-container">
-        <h3>Rapha Mundi Slaps U Ep. #022 (Jul. 2023) [DLC Kultur]</h3>
-        <div class="video-wrapper">
-          <img
-            src="https://img.youtube.com/vi/3tV70S9fQ/maxresdefault.jpg"
-            alt="Otro Video"
-            class="video-thumb"
-            data-video="https://www.youtube.com/embed/3tV70S9fQ?autoplay=1"
-          >
-        </div>
-      </div>
-      <div class="video-container">
-        <h3>Elpidio B2B Raffael (10 h)@Eliseo (The End...) [2023-05-06]</h3>
-        <div class="video-wrapper">
-          <img
-            src="https://img.youtube.com/vi/VOAex0Wx8Q/maxresdefault.jpg"
-            alt="Otro Video"
-            class="video-thumb"
-            data-video="https://www.youtube.com/embed/VOAex0Wx8Q?autoplay=1"
-          >
-        </div>
-      </div>
-      <div class="video-container">
-        <h3>Raffael @ Clic! Record Shop (15-04-2023)</h3>
-        <div class="video-wrapper">
-          <img
-            src="https://img.youtube.com/vi/CqKC6ZXx6xA/maxresdefault.jpg"
-            alt="Otro Video"
-            class="video-thumb"
-            data-video="https://www.youtube.com/embed/CqKC6ZXx6xA?autoplay=1"
-          >
-        </div>
-      </div>
-      <div class="video-container">
-        <h3>Raffael @ Halloween Eliseo (2022-10-29)</h3>
-        <div class="video-wrapper">
-          <img
-            src="https://img.youtube.com/vi/yJKpsJvQT2Q/maxresdefault.jpg"
-            alt="Otro Video"
-            class="video-thumb"
-            data-video="https://www.youtube.com/embed/yJKpsJvQT2Q?autoplay=1"
-          >
-        </div>
-      </div>
-      <div class="video-container">
-        <h3>AntiAnti Sessions #004 · Josu De Orta (Mur Music) & Raffael</h3>
-        <div class="video-wrapper">
-          <img
-            src="https://img.youtube.com/vi/3cFUuXVDxTI/maxresdefault.jpg"
-            alt="Otro Video"
-            class="video-thumb"
-            data-video="https://www.youtube.com/embed/3cFUuXVDxTI?autoplay=1"
-          >
-        </div>
-      </div>
-      <div class="video-container">
-        <h3>AntiAnti Sessions #004 · Gillette Don't Support Us BONUS MIX (Josu De Orta & Raffael)</h3>
-        <div class="video-wrapper">
-          <img
-            src="https://img.youtube.com/vi/qtjugnEKZ1w/maxresdefault.jpg"
-            alt="Otro Video"
-            class="video-thumb"
-            data-video="https://www.youtube.com/embed/qtjugnEKZ1w?autoplay=1"
-          >
-        </div>
-      </div>
-      <div class="video-container">
-        <h3>AntiAnti Sessions #003 · Zareza & Raffael</h3>
-        <div class="video-wrapper">
-          <img
-            src="https://img.youtube.com/vi/ESGpCcYGrtw/maxresdefault.jpg"
-            alt="Otro Video"
-            class="video-thumb"
-            data-video="https://www.youtube.com/embed/ESGpCcYGrtw?autoplay=1"
-          >
-        </div>
-      </div>    
-      <div class="video-container">
-        <h3>AntiAnti Sessions #002 Pablo · Cotton & Raffael</h3>
-        <div class="video-wrapper">
-          <img
-            src="https://img.youtube.com/vi/Z9i5BA9Szz4/maxresdefault.jpg"
-            alt="Otro Video"
-            class="video-thumb"
-            data-video="https://www.youtube.com/embed/Z9i5BA9Szz4?autoplay=1"
-          >
-        </div>
-      </div>
-      <div class="video-container">
-        <h3>AAntiAnti Sessions #001 · Angel Deep & Raffael</h3>
-        <div class="video-wrapper">
-          <img
-            src="https://img.youtube.com/vi/FIPDpSwjAxA/maxresdefault.jpg"
-            alt="Otro Video"
-            class="video-thumb"
-            data-video="https://www.youtube.com/embed/FIPDpSwjAxA?autoplay=1"
-          >
-        </div>
-      </div>
-      <button class="social-btn" onclick="window.open('https://www.youtube.com/@rapha_mundi', '_blank')">More on Youtube...</button>
+      <span class="close" data-translate="close">&times;</span>
+      <h2 class="modal-title" data-translate="videoTitle">Vídeos</h2>
+
+      <!-- Aquí se inyectan los vídeos desde JS -->
+      <div id="videos-container"></div>
+
+      <button class="social-btn"
+        data-translate="moreOnYoutube"
+        onclick="window.open('https://www.youtube.com/@rapha_mundi', '_blank')">
+        Más en YouTube...
+      </button>
     </div>
   </div>
   <!------------------------------------------------------------------------------->
   <!------------------------------------------------------------------------------->
 
   <!------------------------------------------------------------------------------->
-  <!-- DATES MODAL -->
+  <!-- CONTACTO MODAL -->
   <!------------------------------------------------------------------------------->
   <div id="social" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
-      <h2 class="modal-title">Contact/Social</h2>
+      <h2 class="modal-title" data-translate="contactoTitle">Contact/Social</h2>
       <p class="basic-text">For any inquiries, please contact 
         <a href="mailto:mauro.buenobuenodiscos@gmail.com" class="basic-text">mauro.buenobuenodiscos@gmail.com</a>
       </p>
@@ -487,10 +181,16 @@
       <button class="social-btn" onclick="window.open('https://www.youtube.com/@rapha_mundi', '_blank')">Youtube</button>
     </div>
   </div>
+
+
+  <!------------------------------------------------------------------------------->
+  <!-- DATES MODAL -->
+  <!------------------------------------------------------------------------------->
+
   <div id="gigs" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
-      <h2 class="modal-title">Gigs</h2>
+      <h2 class="modal-title" data-translate="agendaTitle">Agenda</h2>
       <div class="gigs-container">
         <h3>2025:</h3> 
         <p><b>08-16 PANIZO ROOM</b> @ Peña El Panizo (Murchante) W/ Izurzu, Otal, Elpidio</p>
@@ -736,6 +436,8 @@
 
   <canvas id="draw"></canvas>
   <script src="js/script.js"></script>
+  <script src="js/lang.js"></script>
+  <script src="js/videoList.js"></script>
 
   <!-- Banner de reproducción -->
   <div id="nowPlaying" class="now-playing">
