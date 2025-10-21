@@ -48,7 +48,13 @@ const translations = {
     new1Title: "Rapha Mundi Slaps U is back!",
     new1Text1: "Next Thursday, October 16, we kick off the season on Radio Relativa with a new episode of Rapha Mundi Slaps U.",
     new1Text2: "As always, the episode can be listened to live through their website.",
-    new1ButtonText: "Listen on Radio Relativa"
+    new1ButtonText: "Listen on Radio Relativa",
+
+    //NOTICIA 2
+    new2Title: "New Slap Mix now on YouTube",
+    new2Text1: "After the summer break, a new episode of Slap Mix is now available.",
+    new2Text2: "As always, you can find it on my YouTube channel.",
+    new2ButtonText: "Listen on YouTube"
     },
   es: {
     newsTitle: "Noticias",
@@ -98,7 +104,13 @@ const translations = {
     new1Title: "¡Vuelve Rapha Mundi Slaps U!",
     new1Text1: "El próximo jueves 16 de Octubre arrancamos temporada en Radio Relativa con un nuevo episodio de Rapha Mundi Slaps U.",
     new1Text2: "Como siempre el episodio podrá ser escuchado en directo a través de su web.",
-    new1ButtonText: "Escuchalo en Radio Relativa"    
+    new1ButtonText: "Escuchalo en Radio Relativa", 
+    
+    //NOTICIA 2
+    new2Title: "Nuevo Slap Mix ya en YouTube",
+    new2Text1: "Trás el parón veraniego, ya tenemos disponible un nuevo episodio de Slap Mix.",
+    new2Text2: "Como siempre lo podeis encontrar en mi canal de YouTube",
+    new2ButtonText: "Escúchalo en YouTube"
     }
 };
 
