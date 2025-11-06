@@ -54,7 +54,13 @@ const translations = {
     new2Title: "New Slap Mix now on YouTube",
     new2Text1: "After the summer break, a new episode of Slap Mix is now available.",
     new2Text2: "As always, you can find it on my YouTube channel.",
-    new2ButtonText: "Listen on YouTube"
+    new2ButtonText: "Listen on YouTube",
+
+    //NOTICIA 3
+    new3Title: "Rapha Mundi Slaps U #40 now on SoundCloud",
+    new3Text1: "A couple of weeks ago, episode number 40 of Rapha Mundi Slaps U was aired on Radio Relativa.",
+    new3Text2: "As always, I’ve made it available on my SoundCloud for you to listen to.",
+    new3ButtonText: "Listen on SoundCloud"
     },
   es: {
     newsTitle: "Noticias",
@@ -77,12 +83,12 @@ const translations = {
     release1Title: "Rapha Mundi - Bonanza [BBD004] 2025/04/03",
     release2Title: "Rapha Mundi - 31521 [BBD002] 2024/09/02",
     buyOnBandcamp: "Comprar en Bandcamp",
-    release1Text1: "Rafael Marín, más conocido como Rapha Mundi, vuelve a Buenobueno Discos con un sólido EP de 6 pistas titulado Bonanza EP. El héroe súper prolífico y trabajador del pequeño pueblo de Murchante, en España, sigue superando límites en su viaje personal a través de la música.",
-    release1Text2: "En este disco Rapha explora los lados más profundos del House y el Techno con una producción minimalista y un sentido increíble para grooves hipnóticos. Siempre listo para club, siempre amigable para DJs.",
-    release1Text3: "Incluso entrega una hermosa pista ambient llamada 'Otra Luz' como la guinda del pastel.",
-    release1Text4: "No te pierdas su programa 'Slaps U' en Relativa Radio (Madrid) donde brilla como un increíble selector de discos.",
-    release2Text1: "El EP debut de Rapha Mundi finalmente está listo en Buenobueno Discos, el sello que dirige junto a su compañero DJ/productor PIEK.",
-    release2Text2: "Para este segundo EP en el sello, Rapha muestra su lado más profundo y entrega 5 pistas que van desde House a Techno o Electro, fuertemente inspiradas por las escenas de Chicago y Detroit. Todo está bellamente elaborado con su estilo único usando equipo analógico.",
+    release1Text1: "Rafael Marín, más conocido como Rapha Mundi, vuelve a Buenobueno Discos con un sólido EP de 6 temas titulado Bonanza EP. Este artista incansable y prolífico, originario del pequeño pueblo de Murchante (España), sigue superando los límites en su viaje personal a través de la música.",
+    release1Text2: "En este disco, Rapha explora las vertientes más profundas del house y el techno, con una producción minimalista y un asombroso sentido del groove hipnótico. Siempre preparado para el club, siempre pensado para los DJs.",
+    release1Text3: "Además, incluye una hermosa pieza ambient titulada “Otra Luz”, como la guinda del pastel.",
+    release1Text4: "No te pierdas tampoco su programa “Slaps U” en Radio Relativa (Madrid), donde demuestra su talento como un increíble selector de discos.",
+    release2Text1: "El EP debut de Rapha Mundi está por fin listo en Buenobueno Discos, el sello que dirige junto a su compañero DJ y productor PIEK.",
+    release2Text2: "Para este segundo EP en el sello, Rapha muestra su lado más profundo y presenta 5 temas que van del house al techno e incluso al electro, fuertemente inspirados en las escenas de Chicago y Detroit. Todo está cuidadosamente producido con su estilo único, grabando y tocando con equipo analógico.",
     moreOnBandcamp: "Más en Bandcamp...",
 
     //MIXES MODAL
@@ -110,7 +116,14 @@ const translations = {
     new2Title: "Nuevo Slap Mix ya en YouTube",
     new2Text1: "Trás el parón veraniego, ya tenemos disponible un nuevo episodio de Slap Mix.",
     new2Text2: "Como siempre lo podeis encontrar en mi canal de YouTube",
-    new2ButtonText: "Escúchalo en YouTube"
+    new2ButtonText: "Escúchalo en YouTube",
+
+    //NOTICIA 3
+    new3Title: "Rapha Mundi Slaps U #40 ya en Soundcloud",
+    new3Text1: "Hace un par de semanas estuvo sonando en Radio Relativa el episodio número 40 de Rapha Mundi Slaps U.",
+    new3Text2: "Como siempre, lo he dejado disponible en mi Soundcloud para su escucha.",
+    new3ButtonText: "Escúchalo en Soundcloud"
+
     }
 };
 
